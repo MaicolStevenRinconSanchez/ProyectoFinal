@@ -1,0 +1,23 @@
+body        {
+    background-color: antiquewhite;
+    max-width: 100px;
+    background-image: url("imagenes/FondoEmpanadas.jpg.crdownload");
+    background-image: url("imagenes/Fondo_2.jpg");
+   }
+
+
+.FondoEm { 
+       
+    width: 2000px;
+    
+    
+ }
+.FondoE{    
+    width: 2000px;
+}
+.Fondo_1{   
+   width: 100%;
+}
+.Fondo_2    {
+    width: 100%;
+}
