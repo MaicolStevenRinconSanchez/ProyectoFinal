@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,19 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("https://via.placeholder.com/1920x1080.png?text=Fondo+Empanadas");
+=======
+body{   
+    margin: 0;
+    padding: 0;
+}
+body{  background-image: url("imagenes/FondoEmpanadas.jpg.crdownload");
+>>>>>>> ddc9b54331297b975484b221357b42dad9df09c3
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 .seccion_1 {
     width: 100%;
     height: auto;
@@ -105,3 +114,60 @@ body {
     .Menuop a:hover {
         background-color: #ddd;
     }
+=======
+.seccion{ 
+    width: 100%;  
+    height: auto;
+}
+
+.Menup{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    z-index: 1000;
+}
+.colmar{    
+    
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    
+    }
+.Logo{  
+    font-size: 20px;
+    margin-top: 10px;
+}
+.Menuop{ 
+    display: flex; 
+    font-size: 16px;
+    }
+.Marca{ 
+    margin-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .colmar {
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .Logo {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .Menuop {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .Marca {
+        margin-right: 10px;
+    }
+}
+>>>>>>> ddc9b54331297b975484b221357b42dad9df09c3
