@@ -1,23 +1,65 @@
-body        {
-    background-color: antiquewhite;
-    max-width: 100px;
-    background-image: url("imagenes/FondoEmpanadas.jpg.crdownload");
-    background-image: url("imagenes/Fondo_2.jpg");
-   }
-
-
-.FondoEm { 
-       
-    width: 2000px;
-    
-    
- }
-.FondoE{    
-    width: 2000px;
+body{   
+    margin: 0;
+    padding: 0;
 }
-.Fondo_1{   
-   width: 100%;
+body{  background-image: url("imagenes/FondoEmpanadas.jpg.crdownload");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.Fondo_2    {
+
+.seccion{ 
+    width: 100%;  
+    height: auto;
+}
+
+.Menup{ 
     width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    z-index: 1000;
+}
+.colmar{    
+    
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    
+    }
+.Logo{  
+    font-size: 20px;
+    margin-top: 10px;
+}
+.Menuop{ 
+    display: flex; 
+    font-size: 16px;
+    }
+.Marca{ 
+    margin-right: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .colmar {
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .Logo {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .Menuop {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .Marca {
+        margin-right: 10px;
+    }
 }
