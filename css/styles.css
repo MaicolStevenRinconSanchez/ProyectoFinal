@@ -1,65 +1,107 @@
-body{   
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{  background-image: url("imagenes/FondoEmpanadas.jpg.crdownload");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://via.placeholder.com/1920x1080.png?text=Fondo+Empanadas");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.seccion{ 
-    width: 100%;  
+.seccion_1 {
+    width: 100%;
     height: auto;
 }
 
-.Menup{ 
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 10px;
-    z-index: 1000;
-}
-.colmar{    
-    
-    border-radius: 50%;
-    height:50px;
-    width: 50px;
-    
-    }
-.Logo{  
-    font-size: 20px;
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
     margin-top: 10px;
 }
-.Menuop{ 
-    display: flex; 
-    font-size: 16px;
-    }
-.Marca{ 
-    margin-right: 20px;
+
+.Menup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 768px) {
-    .colmar {
-        margin-top: 10px;
-        height: 30px;
-        width: 30px;
-    }
 
-    .Logo {
-        font-size: 18px;
-        margin-top: 10px;
-    }
+.LogoText{  
+    font-size: 40px;
+}
+.colmar {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
 
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Menuop {
+    display: none;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.Menuop a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.hamburguesa:checked ~ .hamburguesa-icon ~ .Menuop {
+    max-height: 500px; /* Ajusta la altura máxima según sea necesario */
+}
+
+@media only screen and (min-width: 508px) {
     .Menuop {
-        margin-top: 10px;
-        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        max-height: none;
     }
 
-    .Marca {
-        margin-right: 10px;
+    .hamburguesa {
+        display: none;
+    }   
+    .hamburguesa-icon {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
     }
-}
+    
+    .hamburguesa:checked + .hamburguesa-icon:before {
+        content: "✕";
+    }
+    
+    .hamburguesa:checked ~ .Menuop {
+        display: flex;
+    }
+    
+    .Menuop a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .Menuop a:hover {
+        background-color: #ddd;
+    }
